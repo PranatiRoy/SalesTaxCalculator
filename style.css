@@ -1,0 +1,102 @@
+*{
+    margin: 0;padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+header{
+    height:20px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+input{
+    border:2px solid teal;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    height: 20px;
+    color:teal
+}
+
+input:focus{
+    border:2px solid teal;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    height: 20px;
+    color:teal;
+    outline: none;
+
+}
+#emptbl select{
+    border:2px solid teal;
+    width: 250px;
+    border-radius: 5px;
+    height: 23px;
+    color:teal;
+    
+}
+#emptbl, #t2{
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#emptbl th{
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+}
+#col6-ip{
+    width:223px;
+}
+.btn{
+    width:90px;
+    height: 20px;
+    padding: 0;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 3px;
+} 
+
+.btn:focus{
+    width:90px;
+    height: 20px;
+    padding: 0;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 3px;
+}  
+
+#input-output{
+    background-color: teal;
+    width:90vw;
+    height: 200px;
+    display: flex;
+    margin: auto; 
+    padding: 10px;
+}
+#input{
+    width: 50%;
+    background-color: aqua;
+    padding-left: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#output{
+    width: 50%;
+    background-color: aquamarine;
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+#message{
+    margin-left: 15px;
+    margin-top: -25px;
+}

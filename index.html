@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Onclick increase Table Rows</title>
+   
+    <script src="https://kit.fontawesome.com/cce2a2eb97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>Sales Tax Calculator</header>
+    <form action="#" method="post" name="form1">
+        <table id="emptbl">
+            <tr>
+                <th>Item</th>
+                <th>Item Type</th>
+                <th>Rate</th>
+                <th>Qty</th>
+                <th>Amount Before Tax</th>
+                <th>Sales Tax Rate </th>
+                <th>Amount(including Sales Tax)</th>
+            </tr>
+            <tr>
+                <td id="col0"><input type="text" name="item" value="" placeholder="Item*"/></td>
+
+                <td id="col1">
+                    <select name="type" id="type" aria-placeholder="select-place">
+                        <option value="0">Select*</option>
+                        <option value="1">Book/Food/MedicalProducts</option>
+                        <option value="2">Others</option>
+                        <option value="3">Book/Food/MedicalProducts(Imported)</option>
+                        <option value="4">Others Imported</option>
+                    </select>
+                </td>
+                <td id="col2"><input type="text" name="rate" value="" placeholder="*"/></td>
+                <td id="col3"><input type="text" name="qty" value="" placeholder="*"/></td>
+                <td id="col4" class="i1"><input type="text" name="pbt" value="" /></td>
+                <td id="col5" class="i1"><input type="text" name="tax" value="" /></td>
+                <td id="col6" class="i1"><input id="col6-ip" type="text" name="pat" value="" /></td>
+            </tr>
+        </table>
+        <p id="message" style="font-size: 10px;color:teal">* fields are need to be filled, then press Go>></p>
+        <table id="t2">
+            <tr>
+                <td><span><input class="btn" type="button" value="Add Row" onclick="addRows()" /></span></td>
+                <td><input class='btn' type="button" value="Delete Row" onclick="deleteRows()" /></td>
+                <td><input class='btn' type="button" value="Go>>" onclick="calculate()" /></td>
+                <td><input class="btn" type="button" value="clear" onclick="getClear()" /></td>
+            </tr>
+        </table>
+        <table id="t3">
+            <tr>
+                <td style="width: 100vw;padding: 10px;">
+                    <div id="input-output" >
+                        <div id="input" >
+                            <h3>Input :</h3>
+                            <br>
+                            <p id="content-input"></p>
+                        </div>
+                        <div id="output">
+                            <h3>Output :</h3>
+                            <br>
+                            <p id="content-output"></p>
+                            <p id="sales-content-output"></p>
+                        </div>
+                    </div>
+                </td>             
+            </tr>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
